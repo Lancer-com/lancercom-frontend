@@ -1,7 +1,8 @@
-// import fonts below here preference: googleFonts
-
-// import file dirs below here example: @import "./breakpoints";
-@import "./breakpoints";
+@import "./internal.imports";
+@import "./_breakpoints";
+@import "./variables";
+@import "./common.styles";
+@import "./fonts";
 
 // global environment setting
 *,
@@ -12,6 +13,4 @@ body {
     box-sizing: border-box;
 }
 
-
 // Disclaimer: don't right any other code other done the described above
-
