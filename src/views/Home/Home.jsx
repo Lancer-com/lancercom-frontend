@@ -1,9 +1,10 @@
 import React from 'react'
+import { Body } from './components'
 
 function Home() {
     return (
         <>
-            <h1>Home page</h1>
+            <Body />
         </>
     )
 }

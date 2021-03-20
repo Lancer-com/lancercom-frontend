@@ -1,0 +1,86 @@
+.team__section {
+    margin: 3rem 0;
+    .team__wrap {
+        display: flex;
+        align-items: center;
+        max-width: 1220px;
+        height: 100%;
+        margin: 0 auto;
+        justify-content: space-between;
+        flex-basis: content;
+        @include media("<=phone") {
+            display: flex;
+            flex-direction: column;
+        }
+        .team__des {
+            flex: 40%;
+            h2 {
+                padding: 1rem 0;
+            }
+            p {
+                max-width: 412px;
+                padding: 0.75rem 0;
+            }
+        }
+        .team__carousel {
+            flex: 60%;
+            display: flex;
+            align-items: center;
+            .team__member-container {
+                .slick-list {
+                    height: 100%;
+                    ul {
+                        overflow: hidden;
+                        li {
+                            padding: 0.75rem;
+                            margin: 2rem auto;
+                            width: fit-content;
+                            box-shadow: -2px 4px 20px 0px #14141434;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            .avatar {
+                                width: 100px;
+                                height: 100px;
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 50%;
+                                    background-position: center center;
+                                    object-fit: cover;
+                                }
+                            }
+                            .member__description {
+                                .member-name {
+                                    h4 {
+                                        padding: 0.45rem 0.25rem;
+                                    }
+                                }
+                                .member-role {
+                                    code {
+                                        padding: 0.45rem 0.25rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .team__member-toggle {
+                display: flex;
+                flex-direction: column;
+
+                button {
+                    border: none;
+                    padding: 0.75rem 0.15rem;
+                    background: transparent;
+                    margin: 1rem 0.15rem;
+                    font-size: 16px;
+                    border: 1px solid #14141421;
+                    outline: none;
+                }
+            }
+        }
+    }
+}
