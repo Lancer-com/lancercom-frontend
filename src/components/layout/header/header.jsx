@@ -5,8 +5,8 @@ function Header(props) {
     return (
         <>
             <header>
-                Header
-                </header>
+                Header section
+            </header>
         </>
     )
 }
