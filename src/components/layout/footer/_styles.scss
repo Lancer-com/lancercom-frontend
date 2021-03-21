@@ -1,0 +1,124 @@
+.footer-distributed {
+    background-color: #13100c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f8f8f8;
+    padding: 1rem;
+    @include media("<=tablet") {
+        flex-direction: column;
+        display: flex;
+    }
+    .footer-left {
+        padding: 1rem;
+        flex-flow: nowrap;
+        flex: 30%;
+        h3 {
+            color: #ffffff;
+            font-family: monospace;
+            font-size: 24px;
+            padding: 1rem 0;
+            font-weight: 400;
+            span {
+                color: #5383d3;
+                position: relative;
+                padding-right: .65rem;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 2px;
+                    height: 100%;
+                    background: rgb(174, 162, 160);
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            @include media("<=tablet") {
+                width: 100%;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+                padding: 0.45rem 0;
+                border-bottom: 1px solid #f8f8f823;
+                width: fit-content;
+                &:hover {
+                    color: chartreuse;
+                }
+            }
+        }
+    }
+
+    .footer-center {
+        padding: 1rem;
+        flex: 20%;
+        div {
+            address {
+                line-height: 32px;
+                padding-bottom: 0.25rem;
+            }
+            span {
+                opacity: 0.4;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 0.45rem;
+                width: fit-content;
+                @include media("<=tablet") {
+                    width: 100%;
+                }
+            }
+            p {
+                display: inline-flex;
+                align-items: center;
+                padding: 0.45rem 0;
+                a {
+                    color: #5383d3;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .footer-right {
+        padding: 1rem;
+        .footer-company-about {
+            line-height: 20px;
+            color: #92999f;
+            font-size: 13px;
+            font-weight: normal;
+            margin: 0;
+        }
+        span {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+        }
+        .footer-icons {
+            display: flex;
+            justify-content: space-between;
+            flex-basis: content;
+            mix-blend-mode: difference;
+            a {
+                color: #f8f8f8;
+                font-size: 18px;
+                padding: 1rem 0;
+            }
+        }
+        .footer-company-name {
+            color: #8f9296;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}
