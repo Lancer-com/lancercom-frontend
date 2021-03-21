@@ -1,5 +1,5 @@
 import React from 'react'
-import { Footer, Header } from '../../../../components'
+import {  Footer, Header } from '../../../../components'
 import { HeroBackground, HiwBackground, Services, ShBackground, Team as TeamSection } from './components'
 
 function body() {

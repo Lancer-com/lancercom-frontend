@@ -62,7 +62,9 @@ function Footer() {
             <div class="footer-right aligner">
                 <p class="footer-company-about"></p>
                 <span>About the company</span>
-                <p>#####</p>
+                {/* <p>lancer Technologies is a sofware company that develops, 
+                innovative and creative products and services that provide
+                 total communication and information solutions. </p> */}
                 <div class="footer-icons">
                     <a href="www.facebook.com">
                         <FaFacebook />

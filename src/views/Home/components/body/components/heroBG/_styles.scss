@@ -1,6 +1,5 @@
 section {
     .hero__background {
-        height: 510px;
         display: block;
         background: #1d1d1d11;
         @include media("<=phone") {
