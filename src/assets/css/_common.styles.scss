@@ -1,0 +1,12 @@
+.row {
+    width: 100%;
+}
+.mask {
+    overflow: hidden;
+}
+.aligner {
+    @include media("<=phone") {
+        text-align: center;
+    }
+}
+

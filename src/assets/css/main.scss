@@ -1,0 +1,27 @@
+@import "./_breakpoints";
+@import "./variables";
+@import "./internal.imports";
+@import "./common.styles";
+@import "./fonts";
+// global environment setting
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+ul,
+ol {
+    list-style: none;
+}
+p {
+    font-size: 16px;
+}
+a {
+    text-decoration: none;
+}
+
+// Disclaimer: don't right any other code other done the described above
