@@ -22,9 +22,9 @@
             span {
                 color: #5383d3;
                 position: relative;
-                padding-right: .65rem;
+                padding-right: 0.65rem;
                 &::after {
-                    content: '';
+                    content: "";
                     position: absolute;
                     width: 2px;
                     height: 100%;
@@ -114,11 +114,11 @@
             }
         }
         .footer-company-name {
-            color: #8f9296;
             font-size: 14px;
             font-weight: normal;
             margin: 0;
             text-align: center;
+            opacity: 0.5;
         }
     }
 }
