@@ -1,5 +1,4 @@
 .hiwBg__section {
-    // border: 1px solid;
     font-size: 32px;
     font-family: $heading-font-family;
     padding-top: 2rem;
@@ -37,11 +36,12 @@
                         box-shadow: 20px 11px 20px 0px #14141411;
                         margin: 2rem 0;
                         span {
+                            background: #14141434;
                             position: absolute;
                             top: 4px;
                             left: 10px;
                             font-weight: bolder;
-                            font-size: 3rem;
+                            font-size: 24px;
                             opacity: 0.3;
                             font-family: $heading-font-family;
                             mix-blend-mode: soft-light;

@@ -21,7 +21,7 @@ function HiwBg() {
                         <div className="hiwBg__acc-create">
                             <ul>
                                 <li>
-                                    <span>1</span>
+                                    <span>Step 1:</span>
                                     <h4>
                                         Allow us create you an account:
                                     </h4>
@@ -37,16 +37,16 @@ function HiwBg() {
                                     </div>
                                 </li>
                                 <li>
-                                    <span>2</span>
+                                    <span>Step 2:</span>
                                     <h4>
                                         Talk to one of our dedicated team member
                                     </h4>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi eos rem.
-                                    </p>
+                                        Always ready to help customer with all issues!
+                                    </p> 
                                 </li>
                                 <li>
-                                    <span>3</span>
+                                    <span>Step 3:</span>
                                     <h4>
                                         You're done!
                                     </h4>
