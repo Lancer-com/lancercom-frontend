@@ -1,52 +1,71 @@
-import React from 'react'
-// import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
+import { RiMenu4Fill } from 'react-icons/ri'
+import { GrFormClose } from 'react-icons/gr';
 
 function Header(props) {
+
+    const [isClicked, setIsClicked] = useState(false);
+
+    const handleToggle = e => {
+        setIsClicked(!isClicked);
+    }
+
     return (
         <>
             <header>
-                <main>
-                    <div>
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded text-light" aria-label="Eleventh navbar example">
-                            <div class="container-fluid">
-                                <a className="navbar-brand" href="/">Lancer Technologies </a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
+                <div className="header__container row">
+                    <div className="header-wrap">
+                        <div className="header_logo">
+                            <h1>
+                                Lancer Technologies
+                            </h1>
+                        </div>
+                        <nav className="header__navs">
+                            <ul>
+                                <li>
+                                    <Link to="/">Home</Link>
+                                </li>
+                                <li>
+                                    <Link to="/services">Services</Link>
+                                </li>
+                                <li>
+                                    <Link to="/projects">Projects</Link>
+                                </li>
+                                <li>
+                                    <Link to="/contact">Contact</Link>
+                                </li>
+                                <li>
+                                    <Link to="/blog">Blog</Link>
+                                </li>
+                            </ul>
+                            <div className="hamburger-menu" onClick={handleToggle}>
+                                {isClicked ? (
+                                    <span>
+                                        <GrFormClose />
 
-                                <div class="collapse navbar-collapse" id="navbarsExample09">
-                                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                        <li className="nav-item">
-                                            <a className="nav-link active" aria-current="page" href="/">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a className="nav-link active" href="/">Projects</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a className="nav-link active" href="/" tabindex="-1">Blog</a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a className="nav-link dropdown-toggle" href="/" id="dropdown09" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                                            <ul class="dropdown-menu " aria-labelledby="dropdown09">
-                                                <li><a class="dropdown-item" href="/">Services</a></li>
-                                                <li><a class="dropdown-item" href="/">Contacts</a></li>
-                                                <li><a class="dropdown-item" href="/">About Us</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                    <form action="#">
-                                        <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
-                                    </form>
-                                </div>
+                                    </span>
+                                ) : (
+                                    <span>
+                                        <RiMenu4Fill />
+                                    </span>
+                                )}
                             </div>
                         </nav>
                     </div>
-                </main>
+                </div>
             </header>
         </>
     )
 }
 
 export default Header;
+
+
+
+
+
+
+
 
 
