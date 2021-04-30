@@ -15,7 +15,7 @@ function HiwBg() {
                     <div className="hiwBg__details row">
                         <div className="hiwBg__detail-intro row">
                             <p>
-                                At Lancer-coms we've made our development procedure to be simple as:
+                                At Lancer-coms we&apos;ve made our development procedure to be simple as:
                             </p>
                         </div>
                         <div className="hiwBg__acc-create">
@@ -48,10 +48,10 @@ function HiwBg() {
                                 <li>
                                     <span>3</span>
                                     <h4>
-                                        You're done!
+                                        You&apos;re done!
                                     </h4>
                                     <p>
-                                        Follow your project's progress <Link to="/dashboard">here</Link>
+                                        Follow your project&apos;s progress <Link to="/dashboard">here</Link>
                                     </p>
                                 </li>
                             </ul>

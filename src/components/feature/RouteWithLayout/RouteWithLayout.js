@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const RouteWithLayout = props => {
+    // eslint-disable-next-line no-unused-vars
     const { layout: Layout, component: Component, ...rest } = props;
 
     return (

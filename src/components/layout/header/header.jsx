@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { RiMenu4Fill } from 'react-icons/ri'
 import { GrFormClose } from 'react-icons/gr';
 
-function Header(props) {
+function Header() {
 
     const [isClicked, setIsClicked] = useState(false);
 
-    const handleToggle = e => {
+    const handleToggle = () => {
         setIsClicked(!isClicked);
     }
 

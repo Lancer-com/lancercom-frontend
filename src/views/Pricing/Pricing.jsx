@@ -1,7 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 
-function Pricing(props) {
+function Pricing() {
     return (
         <>
             Pricing PAge

@@ -26,7 +26,7 @@ function HeroBG() {
                             Try Lancer today!
                         </p>
                         <button>
-                            <font> Let's Go</font>
+                            <font> Let&apos;s Go</font>
                             <span>
                                 <FaHandPointRight />
                             </span>

@@ -58,6 +58,6 @@ function Routes() {
             <Redirect to="/not-found" />
         </Switch>
     );
-};
+}
 
 export default Routes;

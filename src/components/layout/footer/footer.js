@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <footer class="footer-distributed row ">
-            <div class="footer-left aligner">
+        <footer className="footer-distributed row ">
+            <div className="footer-left aligner">
                 <h3>
                     lancer
                     <span>Technologies</span>
                 </h3>
-                <div class="footer-links aligner">
+                <div className="footer-links aligner">
                     <Link to="/">
                         Home
                     </Link>
@@ -31,7 +31,7 @@ function Footer() {
                     </Link>
                 </div>
             </div>
-            <div class="footer-center aligner">
+            <div className="footer-center aligner">
                 <div>
                     <address>
                         21 Revolution Street<br />
@@ -59,11 +59,11 @@ function Footer() {
                     </p>
                 </div>
             </div>
-            <div class="footer-right aligner">
-                <p class="footer-company-about"></p>
+            <div className="footer-right aligner">
+                <p className="footer-company-about"></p>
                 <span>About the company</span>
                 <p>#####</p>
-                <div class="footer-icons">
+                <div className="footer-icons">
                     <a href="www.facebook.com">
                         <FaFacebook />
                     </a>
@@ -77,7 +77,7 @@ function Footer() {
                         <FaYoutube />
                     </a>
                 </div>
-                <p class="footer-company-name">&copy;2021 Lancer Technologies</p>
+                <p className="footer-company-name">&copy;2021 Lancer Technologies</p>
 
             </div>
         </footer>

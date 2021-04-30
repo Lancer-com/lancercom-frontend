@@ -1,7 +1,7 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
 
-function Community(props) {
+function Community() {
     return (
         <>
             Community hub
